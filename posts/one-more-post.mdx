@@ -1,7 +1,29 @@
 ---
-title: Mental models for designers
-description: "Consider that for a moment: everything we see around us is assumed to have had a cause and is contingent upon."
-date: Jun 2 2023
----
+title: POST Riddles 
+description: "Enhance the riddle collection in your application by contributing your own puzzles! Our Riddles API allows you to post new riddles across various categories, ensuring a diverse and ever-growing repository."
 
-This is an example post. There's another one [here](/posts/example-post).
+---
+### ROUTES :
+
+#### Description : 
+*POST/category(logic, funny, math, who-am-i, mystery, science)*. Add a new riddle to our database. You can specify the category of the riddle to ensure it is appropriately categorized.
+
+#### Request Body Parameters :
+`riddles`: The text of the riddle.  
+`answer`: The solution to the riddle.   
+`category` : The category of the riddle. Must be one of logic, math, funny, mystery, whoami, science.
+
+### USAGE : 
+```bash
+POST/logic
+Content-Type: application/json
+
+{
+  "question": "What has keys but can't open locks?",
+  "answer": "A piano",
+  "category": "logic",
+}
+
+```
+
+Go back [home](/).

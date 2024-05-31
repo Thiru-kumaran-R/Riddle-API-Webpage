@@ -1,7 +1,40 @@
 ---
-title: Mental models for designers PART 2
-description: "Consider that for a moment: everything we see around us is assumed to have had a cause and is contingent upon."
-date: Jan 14 2024
+title: GET Riddles
+description: "Perfect for developers looking to integrate a wide variety of riddles into their applications, our API offers a rich collection spanning multiple categories, ensuring that there's something for everyone."
+
 ---
 
-This is an example post. There's another one [here](/posts/example-post).
+### ROUTES :
+
+#### Description : 
+GET/category, Retrieve a single riddle with riddle , answer and category as key and it's corresponding as values.
+
+#### Parameters :
+category : Filter riddles by category. Available categories are logic, funny, mystery, science, math, who-am-i.
+
+### USAGE  : 
+#### Get riddle based on science
+
+```bash
+https://riddles-api-eight.vercel.app/science
+```
+#### Get riddle based on math
+```bash
+https://riddles-api-eight.vercel.app/math
+```
+
+#### Get riddle based on mystery
+```bash
+https://riddles-api-eight.vercel.app/mystery
+```
+
+#### Get funny riddle
+```bash
+https://riddles-api-eight.vercel.app/funny
+```
+
+#### Get riddle based on logics
+```bash
+https://riddles-api-eight.vercel.app/logic
+```
+Go back [home](/).

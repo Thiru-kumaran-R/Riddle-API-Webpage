@@ -68,7 +68,8 @@ export default function PostPage({
               <h4 className="text-2xl text-gray-700 mb-6 dark:text-white">
                 {prevPost.title}
               </h4>
-              <ArrowIcon className="transform rotate-180 mx-auto md:mr-0 mt-auto" />
+
+              <ArrowIcon className="transform rotate-180 mx-auto md:mr-0 mt-auto " />
 
             </Link>)
           )}
@@ -83,6 +84,7 @@ export default function PostPage({
               <h4 className="text-2xl text-gray-700 mb-6 dark:text-white">
                 {nextPost.title}
               </h4>
+            
               <ArrowIcon className="mt-auto mx-auto md:ml-0" />
 
             </Link>)

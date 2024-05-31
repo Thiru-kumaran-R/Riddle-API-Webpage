@@ -1,7 +1,42 @@
 ---
-title: Design critiques at Figma
-description: "Consider that for a moment: everything we see around us is assumed to have had a cause and is contingent upon."
-date: Jan 2 2023
----
+title: Error
+description: "When interacting with the Riddles API, error handling is crucial to ensure that your application can gracefully manage issues that arise. Here are examples of error handling responses for both posting and getting data from the API"
 
-This is an example post. There's another one [here](/posts/example-post).
+---
+#### Validation Error : 
+This error might occurs, when a request is malformed -- usually because a field has not been given the correct value type, or the JSON is misformatted. .
+
+**Example**
+
+```bash
+{
+"message": "riddle field is required",
+"status": 422
+}
+```
+
+#### Routes Error : 
+This error might occurs, by reaching wrong route.
+
+**Example**
+
+```bash
+{
+"message": "No such route exits",
+"status": 404
+}
+```
+
+#### Server Error : 
+This error might occurs, when an unexpected server error occurred.
+
+**Example**
+
+```bash
+{
+"message": "Internal server error",
+"status": 500
+}
+```
+
+Go back [home](/).
